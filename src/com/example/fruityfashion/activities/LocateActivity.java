@@ -102,20 +102,12 @@ public class LocateActivity extends Activity {
 	                    .findViewById(R.id.title));
 	            tvTitle.setText(marker.getTitle());
 	            ImageView image = ((ImageView) myContentView.findViewById(R.id.badge));
-				 image.setImageResource(R.drawable.ic_launcher);
+				 image.setImageResource(R.drawable.call);
 	            return myContentView;
 	        }
 	    });
-	 btn_home = (ImageButton) findViewById(R.id.activity_map_ibtn_home);
-	    btn_home.setOnClickListener(new OnClickListener() {
-
-	        @Override
-	        public void onClick(View v) {
-	            // TODO Auto-generated method stub
-	            finish();
-	        }
-	    });
-	}       
+	}
+	 
 	private void initilizeMap() {
 		Log.d("de", "de 1");
 		if (googleMap == null) {

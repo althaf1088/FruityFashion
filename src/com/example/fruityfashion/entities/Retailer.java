@@ -3,7 +3,12 @@ package com.example.fruityfashion.entities;
 import java.io.Serializable;
 import java.util.List;
 
+import org.codehaus.jackson.annotate.JsonIgnore;
 
+
+import android.graphics.Bitmap;
+
+import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Retailer implements Serializable{
@@ -41,7 +46,18 @@ public class Retailer implements Serializable{
 	String backdropColor2;
 	@SerializedName("retailerStores")
 	List<RetailerStores> retailerStores;
+	 @JsonIgnore
+	 @Expose
+	Bitmap logoBit;
+	 @JsonIgnore
 	
+	public Bitmap getLogoBit() {
+		return logoBit;
+	}
+	 @JsonIgnore
+	public void setLogoBit(Bitmap logoBit) {
+		this.logoBit = logoBit;
+	}
 
 	private Retailer() {
 		super();

@@ -28,7 +28,7 @@
         android:showAsAction="never"
         >
         <activity
-            android:name="com.example.fruityfashion.activities.HomeScreenActivity"
+            android:name="com.example.fruityfashion.activities.SplashScreenActivity"
             android:label="@string/app_name"
             android:uiOptions="splitActionBarWhenNarrow"
              >
@@ -41,6 +41,11 @@
         </activity>
         <activity
             android:name="com.example.fruityfashion.activities.LocateActivity"
+            android:label="@string/app_name"
+            
+             />
+        <activity
+            android:name="com.example.fruityfashion.activities.HomeScreenActivity"
             android:label="@string/app_name"
             
              />
